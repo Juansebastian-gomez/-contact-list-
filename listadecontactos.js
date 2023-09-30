@@ -42,3 +42,19 @@ const listaDeContactos = [
   // mostramos la lista después de que se eliminó al contacto.
   imprimirContactos();
   
+  //Creamos la función que me permita actualizar el contacto
+
+  function actualizarContacto(nombreCompleto, nuevoNombreCompleto){
+    const indice = listaDeContactos.indexOf(nombreCompleto);
+    
+    if (indice !==-1) {
+      listaDeContactos[indice] = nuevoNombreCompleto;
+    }
+  
+  
+  }
+
+actualizarContacto ("Valentina Ardila", "Valentina Ardila (actualizado)")
+  
+//mostramos en pantalla la actualización 
+imprimirContactos();
